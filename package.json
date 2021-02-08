@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "node index.js"
+    "start": "npm run build && node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fastify": "^3.11.0"
+  },
+  "engines": {
+    "node": "12.20.x"
   },
   "devDependencies": {
     "@types/node": "^14.14.25",

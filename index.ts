@@ -8,7 +8,7 @@ server.get("/", async (req, reply) => {
 
 const PORT = process.env.PORT || 5000;
 console.log("this is port", process.env.PORT, "this is what I got", PORT);
-server.listen(PORT, (err, addr) => {
+server.listen(PORT, "0.0.0.0", (err, addr) => {
   if (err) {
     console.error(err);
     process.exit(1);
